@@ -1,34 +1,28 @@
-@import url("<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet"> ");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 body {
   font-family: "Poppins", sans-serif;
   color: #313149;
-    overflow: auto;
+  overflow: auto;
   letter-spacing: 2px;
+  line-height: 2;
   font-weight: 300;
+  font-size: 1.4em;
+
 }
 
-#logo, .left, article h3, .blockblanc dt {
+#logo, .left, article h3, dt {
   color: #6B69DB;
 }
 
-article {
-  text-align: center;
-  margin: 5% 0 5% 0;
-}
 
-@media only screen and (min-width: 1440px) {
-  /*Jusqu'à 1440px*/
+/*@media only screen and (min-width: 1440px) {
+  /*A partir de 1440px*/
   
-  body {
-    font-size: 1.4em;
-
-  }
-  
+ 
   nav {
     display: flex;
     justify-content: space-between;
-    margin: 50px
+    margin: 50px 100px 0 100px;
   }
   
   #logo {
@@ -41,38 +35,60 @@ article {
   .text {
     line-height: 1.5em;
   }
+
+.nom{
+  font-weight: bold;
+}
   
   #menu {
     display: flex;
-    gap: 70px;
-    font-weight: 700;
+    gap: 90px;
+    font-weight: 500;
   }
 
   .contenu {
     display: flex;
     justify-content: space-between;
+    margin: 50px 50px 100px 0;
+    
   }
+  
+  .slogan {
+    width: 100%;
+    font-size: 3em;
+    margin: 10% 0 -5% 15%;
+  }
+  
+  .fat {
+    font-weight: bold;
+    margin-bottom: -5%;
+  }
+  
+  .thin {
+    font-weight: 200  }
 
   .right {
-    width: 606px;
+    width: 600px;
   }
 
   .bouton {
     text-align: center;
     color: #E7652D;
-    font-weight: bold;
+    font-weight: 500;
     background-color: #FCD18C;
     border-radius: 10px; 
-    height: 40px;
-    width: 200px;
-    padding: 10px 0 5px 0;
+    height: 65px;
+    width: 250px;
+    padding: 10px 0 20px 0;
+  }
+  
+  header .bouton {
+    margin: -15% 0 10% 7%;
   }
   
   main {
-        background-color: rgba(107, 105, 219, 0.03);
-    padding: 30px 140px
-    
-
+    background-color: rgba(107, 105, 219, 0.03);
+    padding: 30px 140px; 
   }
   
   .infos {
@@ -80,12 +96,10 @@ article {
   }
   
   ul {
-    padding: 0;
-    list-style :none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     width: 100%;
-    gap: 30px 350px;
+    gap: 30px 250px;
     margin: 57px 0 57px 0%;
  }
   
@@ -93,7 +107,7 @@ article {
   li {
    display: flex;
     align-items: center;
-    width: 150%;
+    width: 120%;
     gap: 10px;
     
   }
@@ -109,10 +123,312 @@ article {
 
   h3 {
     font-size: 2em;
-    
+    font-weight: 500;
+    margin: 5% 0 5% 0;    
+  }
+  
+  article{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%
   }
    
+  aside{
+    background-color: white;
+    text-align: center;
+    margin: 50px 0 50px -150px;
+    width:  100.5vw;
+    padding: 50px 0 50px 0 ;
+    box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.09);
   }
+  
+  aside img {
+    margin-left: 5%;
+    padding-bottom: 20px;
+  }
+  
+  #u{
+    width: 100px;
+  }
+    
+  #bretons{
+  width: 150px;  
+  }
+  
+  .pays{
+    font-weight: 500;
+    text-align: center;
+    margin: 5% 0 2% 0;
+  }
+  
+  .blockblanc, .blockblanc2 {
+    background-color: white;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px 50px;
+    padding: 50px 0 5% 5%;
+    margin: auto;
+    box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.09);
+  }
+  
+  dt {
+    font-weight: 500;
+  }
+  
+  .blockblanc2{
+    width: 70%
+  }
+  
+  .blockblanc2 dl {
+    width: 80%;
+    justify-self: center;  }
+  
+  main .bouton{
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+
+@media only screen and (max-width: 1439px) {
+  /*1024 (Jusqu'à 1439px)*/
+
+  #menu {
+    font-weight: 400;
+    gap: 35px;
+  }
+  
+  .contenu {
+    display: inline;
+    width: 50vw;
+  }
+  
+  .slogan {
+    margin: 5% 0 -5% 18%;
+  }
+  
+  .thin, .fat, .slogan {
+    width: 70vw;
+  }
+  
+  .thin {
+    margin-top: 15px;
+  }
+
+  .right {
+    margin: 8vw 0 0 28vw;
+    width: 500px;
+  }
+  
+  header .bouton {
+    margin: 5vw 0 10% 38vw;
+  }
+  
+   .blockblanc2{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 73vw;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) {
+  /*768px (jusqu'à 1023*/
+  
+
+
+  body{
+    font-size: 1.2em;
+  }
+  
+  #menu {
+    display: none;
+  }
+
+#logo {
+  margin-left: -10vw;
+}
+
+  header .bouton {
+    margin-left: 35vw;
+  }
+  
+ .slogan {
+   width: 80%;
+   text-align: center;
+   margin-top: -1px;
+  }
+  
+  .fat {
+    margin-bottom: -10vw;
+  }
+  .fat, .thin {
+    margin-left: -5vw;
+    width: 80vw;
+  }
+  
+  .right {
+  margin-left: 20vw;
+  }
+  
+  aside {
+    width: 101vw;
+  }
+  
+    ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px 200px;
+ }
+  
+  li {
+    width: 30vw;  
+  }
+  
+   .blockblanc {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 70vw;
+    font-size: 0.8em;
+    padding-top: 20px;
+    gap:15px;
+    margin-left: -4vw ; 
+  }
+  
+  .blockblanc2{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 70vw;
+    font-size: 0.8em;
+    padding-top: 20px;
+    gap:0px;
+    margin-left: -4vw ;
+  }
+  
+}
+  
+
+
+
+
+@media only screen and (max-width: 767px) {
+  /*360px (de 0 à 767px*/
+
+  body {
+    font-size: 0.75em;
+  }
+  
+    header {
+    margin: -35px 0 0 -50px;
+  }  
+  
+  #logo {
+    height: 30px
+  }
+  
+  #logo div {
+    margin-left: -15px
+  }
+  
+  #logo img{
+    width: 40px;
+    height: 30px
+  }
+  
+  .left {
+    font-size: 0.6em;
+    width: 90vw;
+    margin: 25px 0 0 12vw;
+  }
+  
+  .right {
+    height: 150px;
+    width: 80vw;
+    margin: 30px 0 20px 26vw;
+  }
+  
+   .bouton{
+    height: 40px;
+    width: 150px;
+    padding-bottom: 34px;
+  }
+  
+  .contenu{
+    margin-right: -10px;
+  }
+  
+  header .bouton {
+    margin: 20px 0 40px 45vw;
+  }
+  
+  .blockblanc, .blockblanc2 {
+    margin: 0 0 20px -70px;
+  }  
+    
+  main .bouton {
+    margin-left: -50px;
+  }
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+    gap: 15px;
+    margin: -10px 0 30px 0%;
+ }
+  
+  
+  li {
+    width: 120%;
+    margin-left: -50px    
+  }
+      
+    li img {
+      height: 40px;
+    }  
+  
+  hr {
+    width: 70vw;
+    margin-left:  -25vw;
+    margin-bottom: 40px;
+     }
+
+  article {
+    width: 80vw;
+    margin: -20px 0 -20px -28vw 
+  }
+  
+  aside {
+    height: 150px; 
+    padding: 10px 0 0 10px;
+  }
+  
+  
+  aside img, #bretons {
+  width: 20vw;
+  }
+  
+  #u {
+    width: 15%;
+  }
+  
+  .pays {
+    margin: 30px 0 20px 0;
+  }
+  
+     .blockblanc, .blockblanc2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 80vw;
+    margin-left: -28vw;
+    padding: 0 0 20px 10vw;
+    font-size: 1.2em;
+  }
+  
+  .blockblanc2 {
+    padding: 20px 0 25px 2vw;
+    margin-left: -28vw;
+  }
+  
+}
+
+  
 
   /* .container {
     display: grid;
@@ -124,4 +440,4 @@ article {
 
   .container div {
   } */
-}
+
