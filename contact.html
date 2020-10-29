@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menu_hamb").hide();
+        $(".toggle_btn").click(function () {
+          $(".menu_hamb").slideToggle();
+        });
+      });
+
+      // $(document).ready(function () {
+      //   $(".toggle_btn").click(function () {
+      //     $(this).toggleClass("open");
+      //   });
+      // });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="toggle_btn">
+          <span></span>
+        </div>
+        <div class="menu_hamb">
+          <a href="#" class="logo_menu">Mon logo</a>
+          <a href="#">Item 1</a>
+          <a href="#">Item 2</a>
+          <a href="#">Item 3</a>
+          <a href="#">Item 4</a>
+        </div>
+        <div id="logo">
+          <img src="./assets/logo.svg" />
+          <div class="text">
+            <div class="nom">jaipasdevoiture</div>
+            <div class="telephone">+33 123456789</div>
+          </div>
+        </div>
+        <div id="menu">
+          <div class="lien">TARIFS</div>
+          <div class="lien">A PROPOS</div>
+          <div class="lien">CONTACT</div>
+        </div>
+      </nav>
+      <div class="contenu_contact">
+        <label for="email">Email</label>
+        <input method="post" name="email"></input>
+        <label for="message">Message</label>
+        <input method="post" name="email"></input>
+        <div class="bouton_contact">C'EST PARTI</div>
+      </div>
+     </header>
+  </body>
+</html>
